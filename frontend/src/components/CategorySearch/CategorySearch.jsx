@@ -1,9 +1,24 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from 'react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Search } from 'lucide-react';
+import GlobalApi from '@/utils/GlobalApi';
+
 
 function CategorySearch() {
+
+
+  useEffect(() => {
+    getCategoryList();
+  }, [])
+
+  const getCategoryList = () => {
+    GlobalApi.getCategory().then(resp => {
+      console.log(resp);
+    });
+  }
+
   return (
     <div className="mb-10 flex items-center flex-col gap-4">
         <h2 className="font-bold text-4xl tracking-wide">Поиск врача</h2>
