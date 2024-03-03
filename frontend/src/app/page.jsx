@@ -5,8 +5,8 @@ import CategorySearch from "@/components/CategorySearch/CategorySearch";
 export default function Home() {
   return (
     <>
-      <Hero/>
-      <CategorySearch/>
+      <Hero />
+      <CategorySearch />
     </>
   );
 }

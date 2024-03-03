@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Категории"
+    "displayName": "Категории",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,12 @@
       "required": true
     },
     "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     }
   }
 }

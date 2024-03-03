@@ -789,6 +789,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     singularName: 'category';
     pluralName: 'categories';
     displayName: '\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438';
+    description: '';
   };
   options: {
     draftAndPublish: true;
