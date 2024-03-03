@@ -23,6 +23,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doctor.doctor",
+      "mappedBy": "category"
     }
   }
 }

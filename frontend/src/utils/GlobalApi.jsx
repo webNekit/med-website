@@ -9,7 +9,12 @@ const axiosClient = axios.create({
     }
 });
 
+// Запрос на вывод категорий
 const getCategory = () => axiosClient.get('categories?populate=*');
+// Запрос на вывод врачей
+const getDoctorsList = () => axiosClient.get('doctors?populate=*');
+// функция для экспорта запросов
 export default {
-    getCategory
+    getCategory,
+    getDoctorsList
 }
