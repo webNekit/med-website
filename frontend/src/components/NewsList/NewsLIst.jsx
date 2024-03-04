@@ -25,7 +25,7 @@ function NewsLIst() {
       <div className="max-w-6xl mx-auto py-4">
         <h2 className="text-3xl font-bold text-blue-500 mb-8">Наши новости</h2>
         <ul className="w-full grid grid-cols-4 gap-4">
-          {articlesList.map((item, index) => (
+          {articlesList.length > 0 ? articlesList.map((item, index) => (
             <li key={index} className="w-full h-full">
               <article className="w-full h-full flex flex-col p-3 border border-zinc-100 rounded-md">
                 <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${item.attributes?.Image?.data.attributes?.url}`} alt="Изображение" width="270" height="250" className="w-full h-[280px] object-cover rounded-md" />
@@ -36,7 +36,12 @@ function NewsLIst() {
                 </Button>
               </article>
             </li>
-          ))}
+          )) 
+          :
+          [1,2,3,4,5,6,7,8].map((item,index) => (
+            <div key={index} className="w-full h-[578px] bg-slate-100 rounded-md animate-pulse"></div>
+          ))
+        }
         </ul>
       </div>
     </section>
