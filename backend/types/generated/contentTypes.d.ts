@@ -783,6 +783,49 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiArticleArticle extends Schema.CollectionType {
+  collectionName: 'articles';
+  info: {
+    singularName: 'article';
+    pluralName: 'articles';
+    displayName: '\u041D\u043E\u0432\u043E\u0441\u0442\u0438';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Name: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        minLength: 5;
+      }>;
+    SmallText: Attribute.RichText &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 155;
+      }>;
+    LongText: Attribute.RichText;
+    Image: Attribute.Media & Attribute.Required;
+    Date: Attribute.Date & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCategoryCategory extends Schema.CollectionType {
   collectionName: 'categories';
   info: {
@@ -909,6 +952,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::article.article': ApiArticleArticle;
       'api::category.category': ApiCategoryCategory;
       'api::doctor.doctor': ApiDoctorDoctor;
       'api::slider.slider': ApiSliderSlider;

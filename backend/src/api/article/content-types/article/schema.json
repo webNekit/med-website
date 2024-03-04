@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Новости",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "minLength": 5
+    },
+    "SmallText": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 155
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

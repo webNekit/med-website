@@ -15,9 +15,12 @@ const getCategory = () => axiosClient.get('categories?populate=*');
 const getDoctorsList = () => axiosClient.get('doctors?populate=*');
 // Запрос на вывод записей принадлежащих одной категории
 const getDoctorsByCategory = (category) => axiosClient.get("/doctors?filters[category][id][$in]="+category+"&populate=*");
+// Запрос на вывод статьей 
+const getArticlesLst = () => axiosClient.get('/articles?populate=*');
 // функция для экспорта запросов
 export default {
     getCategory,
     getDoctorsList,
-    getDoctorsByCategory
+    getDoctorsByCategory,
+    getArticlesLst
 }
