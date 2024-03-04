@@ -21,7 +21,7 @@ function NewsLIst() {
   }
 
   return (
-    <section className="w-full py-40">
+    <section className="w-full py-20">
       <div className="max-w-6xl mx-auto py-4">
         <h2 className="text-3xl font-bold text-blue-500 mb-8">Наши новости</h2>
         <ul className="w-full grid grid-cols-4 gap-4">
