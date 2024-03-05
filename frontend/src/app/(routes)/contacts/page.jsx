@@ -12,6 +12,16 @@ export default function contacts() {
   const [userName, setUserName] = useState();
   const [userEmail, setUserEmail] = useState();
   const [userDescription, setUserDescription] = useState();
+  // Проверка на заполненность полей
+  const [formField, setFormField] = useState(false);
+
+  useEffect(() => {
+    if ( userName && userEmail && userDescription ) {
+      setFormField(true);
+    } else {
+      setFormField(false);
+    }
+  },[ userName, userEmail, userDescription ]);
 
   const saveApplications = () => {
     const data = {
@@ -50,7 +60,7 @@ export default function contacts() {
                 <Textarea id="description" onChange={(e) => setUserDescription(e.target.value)} placeholder="Введите свое сообщение" />
               </div>
               <div className="w-full col-span-2 mt-6 flex">
-                <Button onClick={() => saveApplications()}>Отправить</Button>
+                <Button disabled={!formField} onClick={() => saveApplications()}>Отправить</Button>
               </div>
             </div>
             {/* Конец формы */}
