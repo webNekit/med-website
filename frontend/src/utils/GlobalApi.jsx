@@ -19,11 +19,14 @@ const getDoctorsByCategory = (category) => axiosClient.get('/doctors?filters[cat
 const getArticlesLst = () => axiosClient.get('/articles?populate=*');
 // Запрос на вывод single-статьи
 const getArticleById = (id) => axiosClient.get('/articles/'+id+'?populate=*');
+// Создание новой заявки 
+const createApplication = (data) => axiosClient.post('/applications', data);
 // функция для экспорта запросов
 export default {
     getCategory,
     getDoctorsList,
     getDoctorsByCategory,
     getArticlesLst,
-    getArticleById
+    getArticleById,
+    createApplication
 }
