@@ -1,0 +1,58 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding-block: 12px;
+    padding-inline: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: var(--rounded-base);
+    border-width: 1px;
+    border-style: solid;
+    transition: color .2s, background .2s, border .2s;
+}
+
+.button--primary {
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+}
+
+.button--primary:is(:hover, :active) {
+    color: var(--primary-foreground-hover);
+    background-color: var(--primary-background-hover);
+    border-color: var(--primary-background-hover);
+}
+
+.button--ghost {
+    color: var(--ghost-foreground);
+    background-color: var(--ghost-background);
+    border-color: var(--ghost-background);
+}
+
+.button--ghost:is(:hover, :active) {
+    color: var(--ghost-foreground-hover);
+    background-color: var(--ghost-background-hover);
+    border-color: var(--ghost-background-hover);
+}
+
+.button--secondary {
+    color: var(--secondary-foreground);
+    background-color: var(--secondary-background);
+    border-color: var(--secondary-background);
+}
+
+.button--secondary:is(:hover, :active) {
+    color: var(--secondary-foreground-hover);
+    background-color: var(--secondary-background-hover);
+    border-color: var(--secondary-background-hover);
+}
+
+.button--outline {
+    color: var(--ghost-foreground);
+    background-color: transparent;
+    border-color: var(--ghost-foreground);
+}
+
+.button--outline:is(:hover, :active) {
+    background-color: var(--secondary-background);
+}

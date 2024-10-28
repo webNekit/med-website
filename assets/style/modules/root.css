@@ -1,0 +1,48 @@
+:root {
+    --font-primary: "Nunito", sans-serif;
+
+    --background: #fff;
+    --foreground: #141414;
+
+    --card-background: #F0F6F9;
+    --card-foreground: #141414;
+
+    --primary-background: #00578A;
+    --primary-background-hover: #0070B1;
+    --primary-foreground: #fff;
+    --primary-foreground-hover: #fff;
+
+    --ghost-background: #E3EFF5;
+    --ghost-background-hover: #D5E9F3;
+    --ghost-foreground: #00578A;
+    --ghost-foreground-hover: #00578A;
+
+    --secondary-background: #00C6BF;
+    --secondary-background-hover: #00E1DA;
+    --secondary-foreground: #fff;
+    --secondary-foreground-hover: #fff;
+
+    --separator: #C6D9E2;
+    /* --border:  */
+
+    /* --muted-background: ; */
+    --muted-foreground: #4F4F4F;
+
+    /* fonts size */
+    --text-2xl: 60px;
+    --text-xl: 48px;
+    --text-lg: 32px;
+    --text-md: 28px;
+    --text-sm: 22px;
+    --text-xs: 20px;
+    --text-base: 18px;
+
+    /* radius size */
+    --rounded-full: 50%;
+    --rounded-base: 5px;
+
+    /* content size style */
+    --content: 1312px;
+    --container-offset: 20px;
+    --container-width: calc(var(--content) + (var(--container-offset) * 2));
+}

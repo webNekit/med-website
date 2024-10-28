@@ -1,0 +1,41 @@
+.container {
+    max-width: var(--container-width);
+    padding-inline: var(--container-offset);
+    margin-inline: auto;
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--text-2xl);
+    font-weight: 700;
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--text-xl);
+    font-weight: 700; 
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+    line-height: 40px;
+    font-weight: 600; 
+}
+
+.text-md {
+    font-size: var(--text-md);
+    line-height: 38px;
+    font-weight: 600;
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--text-sm);
+    font-weight: 600;
+}
+
+.text-xs {
+    font-size: var(--text-xs);
+    line-height: 28px;
+    font-weight: 600;
+}
