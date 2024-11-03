@@ -8,6 +8,7 @@ html {
     color: var(--foreground);
     font-family: var(--font-primary);
     background-color: var(--background);
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 

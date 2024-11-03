@@ -3,7 +3,7 @@
     padding-block-start: 40px;
     color: var(--primary-foreground);
     background: rgb(0,116,184);
-    background-image: url('../../img/banner/texture.svg'), linear-gradient(245deg, rgba(0,116,184,1) 0%, rgba(0,186,198,1) 100%);
+    background-image: url('../../img/banner/texture.svg'), var(--gradient);
     background-repeat: no-repeat;
     background-position: right;
 }

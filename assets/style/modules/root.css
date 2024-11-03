@@ -3,6 +3,7 @@
 
     --background: #fff;
     --foreground: #141414;
+    --gradient: linear-gradient(245deg, rgba(0,116,184,1) 0%, rgba(0,186,198,1) 100%);
 
     --card-background: #F0F6F9;
     --card-foreground: #141414;

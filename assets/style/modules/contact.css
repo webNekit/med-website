@@ -1,0 +1,87 @@
+.contact {
+    width: 100%;
+    padding-block: 40px;
+    color: var(--primary-foreground);
+}
+
+.contact__wrapper {
+    width: 100%;
+    padding: 70px 90px;
+    border-radius: 14px;
+    background: rgb(0,116,184);
+    background-image: var(--gradient);
+}
+
+.contact__row {
+    width: 100%;
+}
+
+.contact__row--top {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-block-end: 60px;
+}
+
+.contact__title {
+    grid-column: 2 span;
+}
+
+.contact__text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact__form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.contact__form-group--primary {
+    grid-column: 2 span;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.contact__form-group--submit {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+}
+
+.contact__form-item {
+    width: 100%;
+}
+
+.contact__form-item--flex {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.contact__form-field {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding-inline: 30px;
+    border-radius: var(--rounded-base);
+    background-color: var(--background);
+    outline-offset: 2px;
+    transition: outline 200ms;
+    &:is(:hover, :focus) {
+        outline: 2px solid var(--foreground);
+    }
+}
+
+.contact__button {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__form-label {
+    font-size: 14px;
+    line-height: 18px;
+}
