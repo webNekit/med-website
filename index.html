@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <!-- remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- reset-стили -->
     <link rel="stylesheet" href="./assets/style/vendor/reset.min.css">
     <!-- main-стили -->
@@ -286,7 +288,94 @@
                 </section>
                 <section class="about" id="about">
                     <div class="container about__container">
-                        контент
+                        <div class="about__row about__row--top">
+                            <div class="about__row-col about__row-col--left">
+                                <h2 class="text-xl about__title">Немного о нашем медицинском центре</h2>
+                                <p class="about__text">Многопрофильное амбулаторно-поликлиническое учреждение для детей и взрослых в городе Мытищи. Мы предоставляем платные медицинские услуги и занимаем лидирующие позиции среди медицинских учреждений города Мытищи. У нас ежегодно обслуживаются более 150000 пациентов.</p>
+                            </div>
+                            <div class="about__row-col about__row-col--right">
+                                <img src="./assets/img/about/about-img.png" alt="Фотография врача" width="580" height="400" class="about__img">
+                            </div>
+                        </div>
+                        <div class="about__row about__row--bottom">
+                            <ul class="about__benefit-list">
+                                <li class="about__benefit-item">
+                                    <div class="about__benefit-card">
+                                        <img src="./assets/img/about/cross.svg" alt="Иконка преимущества" class="about__benefit-icon">
+                                        <h3 class="about__benefit-title">>10</h3>
+                                        <p class="about__benefit-descr">лет заботы о вашем здоровье</p>
+                                    </div>
+                                </li>
+                                <li class="about__benefit-item">
+                                    <div class="about__benefit-card">
+                                        <img src="./assets/img/about/cross.svg" alt="Иконка преимущества" class="about__benefit-icon">
+                                        <h3 class="about__benefit-title">>10</h3>
+                                        <p class="about__benefit-descr">лет заботы о вашем здоровье</p>
+                                    </div>
+                                </li>
+                                <li class="about__benefit-item">
+                                    <div class="about__benefit-card">
+                                        <img src="./assets/img/about/cross.svg" alt="Иконка преимущества" class="about__benefit-icon">
+                                        <h3 class="about__benefit-title">>10</h3>
+                                        <p class="about__benefit-descr">лет заботы о вашем здоровье</p>
+                                    </div>
+                                </li>
+                                <li class="about__benefit-item">
+                                    <div class="about__benefit-card">
+                                        <img src="./assets/img/about/cross.svg" alt="Иконка преимущества" class="about__benefit-icon">
+                                        <h3 class="about__benefit-title">>10</h3>
+                                        <p class="about__benefit-descr">лет заботы о вашем здоровье</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="services" id="services">
+                    <div class="container services__container">
+                        <div class="swiper services__swiper">
+                            <div class="services__head">
+                                <h2 class="text-xl services__title">Популярные услуги</h2>
+                                <div class="services__swiper-controls">
+                                    <button class="services__swiper-control services__swiper-control--prev">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                    </button>
+                                    <button class="services__swiper-control services__swiper-control--next">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-wrapper services__swiper-wrapper">
+                                <div class="swiper-slide services__swiper-slide services-slide">
+                                    <div class="services-slide__content">
+                                        <img src="" alt="Изображение услуги" class="services-slide__img">
+                                        <h3 class="services-slide__name">Магнитно-резонансная томография (МРТ)</h3>
+                                        <a href="#!" class="button button--primary services-slide__link">Записаться</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services__swiper-slide services-slide">
+                                    <div class="services-slide__content">
+                                        <img src="" alt="Изображение услуги" class="services-slide__img">
+                                        <h3 class="services-slide__name">Магнитно-резонансная томография (МРТ)</h3>
+                                        <a href="#!" class="button button--primary services-slide__link">Записаться</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services__swiper-slide services-slide">
+                                    <div class="services-slide__content">
+                                        <img src="" alt="Изображение услуги" class="services-slide__img">
+                                        <h3 class="services-slide__name">Магнитно-резонансная томография (МРТ)</h3>
+                                        <a href="#!" class="button button--primary services-slide__link">Записаться</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services__swiper-slide services-slide">
+                                    <div class="services-slide__content">
+                                        <img src="" alt="Изображение услуги" class="services-slide__img">
+                                        <h3 class="services-slide__name">Магнитно-резонансная томография (МРТ)</h3>
+                                        <a href="#!" class="button button--primary services-slide__link">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -294,6 +383,8 @@
         <footer></footer>
     </div>
     <!-- js-библиотеки -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
     <script src="./assets/javascript/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+.about {
+    width: 100%;
+    padding-block-end: 60px;
+}
+
+.about__row {
+    width: 100%;
+}
+
+.about__row--top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 85px;
+}
+
+.about__row-col {
+    width: 100%;
+}
+
+.about__row-col--left {
+    align-self: center;
+}
+
+.about__row-col--left:has(.about__text) .about__title {
+    margin-block-end: 40px;
+}
+
+.about__text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about__row--bottom {
+    padding: 45px 70px;
+    border-radius: var(--rounded-base);
+    background-color: #F0F6F9;
+}
+
+.about__benefit-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 42px;
+}
+
+.about__benefit-item {
+    width: 100%;
+    height: 100%;
+}
+
+.about__benefit-card {
+    width: 100%;
+    height: 100%;
+}
+
+.about__benefit-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.about__benefit-title {
+    margin-block-start: 20px;
+    margin-block-end: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-background);
+}
+
+.about__benefit-descr {
+    font-size: 16px;
+    line-height: 22px;
+}
