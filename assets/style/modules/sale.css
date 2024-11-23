@@ -1,0 +1,82 @@
+.sale {
+    width: 100%;
+    padding-block: 60px;
+}
+
+.sale__context {
+    width: 100%;
+    margin-block-start: 40px;
+}
+
+.sale__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.sale__list-item {
+    width: 100%;
+    height: 100%;
+}
+
+.sale__list-card,
+.sale-card {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: var(--rounded-base);
+    background-image: var(--gradient);
+    transition: transform 300ms;
+}
+
+.sale-card:is(:hover, :active)  {
+    transform: translateY(-15px);
+}
+
+.sale-card__link {
+    width: 100%;
+    height: 100%;
+}
+
+.sale-card__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sale-card__info {
+    width: auto;
+    height: 100%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-card__info-date {
+    padding: 13px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--foreground);
+    border-radius: var(--rounded-base);
+    background-color: var(--secondary-background);
+}
+
+.sale-card__info-title {
+    margin-block-start: auto;
+    margin-block-end: 12px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.sale-card__info-text {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.sale-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

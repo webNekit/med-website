@@ -2,10 +2,13 @@
 @import url(./base/base.css);
 @import url(./base/utils.css);
 @import url(./base/button.css);
-
+/* подключение модулей */
 @import url(./modules/header.css);
 @import url(./modules/banner.css);
 @import url(./modules/navigator.css);
 @import url(./modules/contact.css);
 @import url(./modules/about.css);
 @import url(./modules/services.css);
+@import url(./modules/sale.css);
+@import url(./modules/doctors.css);
+@import url(./modules/feedback.css);
