@@ -1,0 +1,41 @@
+.partners {
+    width: 100%;
+    padding-block: 140px;
+}
+
+.partners__content {
+    width: 100%;
+}
+
+.partners__title {
+    text-align: center;
+    margin-block-end: 40px;
+}
+
+.partners__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+.partners__grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.partner-card {
+    width: 100%;
+    height: 100%;
+    padding: 14px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--rounded-base);
+    background-color: var(--card-background);
+}
+
+.partner-card__logo {
+    width: 100%;
+    height: auto;
+}
