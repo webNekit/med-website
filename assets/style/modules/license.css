@@ -1,0 +1,105 @@
+.license {
+    width: 100%;
+    padding-block-start: 70px;
+    padding-block-end: 60px;
+}
+
+.license__swiper {
+    width: 100%;
+}
+
+.license__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.license__swiper-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.license__swiper-control {
+    --size: 52px;
+    min-width: var(--size);
+    height: var(--size);
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: var(--rounded-full);
+}
+
+.license__swiper-control--prev {
+    color: var(--primary-background);
+    background-color: #F0F6F9;
+}
+
+.license__swiper-control--next {
+    color: #fff;
+    background-color: var(--primary-background);
+}
+
+.license__swiper-wrapper {
+    width: 100%;
+    margin-block-start: 40px;
+}
+
+.license__swiper-slide, .license-slide, 
+.license-slide__wrapper, .license-slide__link
+{
+    width: 100%;
+    height: 100%;
+}
+
+.license-slide__preview {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    padding: 20px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--rounded-base);
+}
+
+.license-slide__preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.license-slide__preview-badge {
+    --size: 73px;
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    opacity: 0;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--rounded-full);
+    background-color: var(--card-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+}
+.license-slide__preview-badge:has(i) i {
+    color: var(--primary-background);
+    font-size: 32px;
+}
+
+.license-slide__link:is(:hover, :focus) .license-slide__preview-badge {
+    opacity: 1;
+    bottom: 25px;
+}
+
+.license-slide__link:is(:hover, :focus) .license-slide__name {
+    color: var(--primary-background);
+}
+
+.license-slide__name {
+    margin-block-start: 20px;
+    text-align: left;
+    transition: color 300ms;
+}
