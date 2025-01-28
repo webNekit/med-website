@@ -1,0 +1,9 @@
+.sale-section {
+    padding-block-start: 40px;
+    padding-block-end: 60px;
+}
+
+.sale-section__list {
+    display: grid;
+    row-gap: 30px;
+}

@@ -20,8 +20,8 @@
     height: 100%;
 }
 
-.sale__list-card,
-.sale-card {
+
+.sale-card:is(.sale__list-card) {
     width: 100%;
     height: 100%;
     color: #fff;
@@ -30,22 +30,22 @@
     transition: transform 300ms;
 }
 
-.sale-card:is(:hover, :active)  {
+.sale-card:is(.sale__list-card):hover  {
     transform: translateY(-15px);
 }
 
-.sale-card__link {
+.sale-card:is(.sale__list-card) .sale-card__link {
     width: 100%;
     height: 100%;
 }
 
-.sale-card__wrapper {
+.sale-card:is(.sale__list-card) .sale-card__wrapper {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.sale-card__info {
+.sale-card:is(.sale__list-card) .sale-card__info {
     width: auto;
     height: 100%;
     padding: 40px 40px;
@@ -53,7 +53,7 @@
     flex-direction: column;
 }
 
-.sale-card__info-date {
+.sale-card:is(.sale__list-card) .sale-card__info-date {
     padding: 13px 24px;
     font-size: 14px;
     font-weight: 700;
@@ -62,20 +62,20 @@
     background-color: var(--secondary-background);
 }
 
-.sale-card__info-title {
+.sale-card:is(.sale__list-card) .sale-card__info-title {
     margin-block-start: auto;
     margin-block-end: 12px;
     font-size: 60px;
     font-weight: 700;
 }
 
-.sale-card__info-text {
+.sale-card:is(.sale__list-card) .sale-card__info-text {
     font-size: 28px;
     line-height: 32px;
     font-weight: 600;
 }
 
-.sale-card__img {
+.sale-card:is(.sale__list-card) .sale-card__img {
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГМЦ</title>
+    <!-- google шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- reset-стили -->
+    <link rel="stylesheet" href="./assets/style/vendor/reset.min.css">
+    <!-- main-стили -->
+    <link rel="stylesheet" href="./assets/style/main.css">
+</head>
+<body>
+    <div class="page-wrapper" id="page-wrapper">
+        <header class="header" id="header">
+            <div class="container header__container">
+                <!-- start header-top -->
+                <div class="header__top">
+                    <div class="header__logo logo">
+                        <a href="index.html" class="logo__link">
+                            <img src="./assets/img/logo.svg" alt="Логотип ГМЦ" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="header__social">
+                        <a href="tel:+74959260603" class="header__social-phone">8 (495) 926-06-03</a>
+                        <ul class="header__social-list">
+                            <li class="header__social-item">
+                                <a href="#!" target="_blank" class="header__social-link">
+                                    <img src="./assets/img/icon/whatsapp.svg" alt="Whatsapp" class="header__social-icon">
+                                    <div class="header__social-name">Whatsapp</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__contact">
+                        <a href="mailto:info@gormedcentre.ru" class="header__contact-email">info@gormedcentre.ru</a>
+                        <a href="#contact" class="header__contact-link">Заказать звонок</a>
+                    </div>
+                    <div class="header__address">г. Мытищи,<br>ул.Рождественская, д.7</div>
+                    <div class="header__work-time">Ежедневно<br>с 9.00 до 21.00</div>
+                    <ul class="header__tools">
+                        <li class="header__tools-item">
+                            <button class="header__search-btn button" data-toggler-search>
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </li>
+                        <li class="header__tools-item">
+                            <a href="#!" class="header__login-link button button--ghost">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end header-top -->
+                <!-- start header-bottom -->
+                <div class="header__bottom">
+                    <nav class="header__navbar navbar">
+                        <menu class="navbar__menu">
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Направления</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Услуги</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Врачи</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Отзывы</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Акции</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">О центре</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Детство</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#!" class="navbar__menu-link">Контакты</a>
+                            </li>
+                        </menu>
+                    </nav>
+                    <ul class="header__tools header__tools--bottom">
+                        <li class="header__tools-item">
+                            <button class="header__tools-btn-verison button">
+                                <i class="ri-glasses-2-line"></i>Версия для слабовидящих
+                            </button>
+                        </li>
+                        <li class="header__tools-item">
+                            <button class="header__tools-btn-order button button--primary">Запись на приём</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end header-bottom -->
+            </div>
+        </header>
+        <main class="main" id="main">
+            <div class="main-wrapper">
+                <section class="sale-section" id="sale-section">
+                    <div class="container sale-section__container">
+                        <div class="sale-section__inner">
+                            <ul class="sale-section__list">
+                                <li class="sale-section__list-item">
+                                    <article class="sale-section__card sale-card sale-card--current">
+                                        <div class="sale-card__body">
+                                            <div class="sale-card__preview">
+                                                <img loading="lazy" src="./assets/img/blog/img.png" alt="Изображение акции" class="sale-card__preview-img">
+                                            </div>
+                                            <div class="sale-card__info">
+                                                <div class="sale-card__info-top">
+                                                    <h3 class="sale-card__info-title text-md">Программы ведения беременности</h3>
+                                                    <h4 class="sale-card__info-percent">10% скидка на все услуги центра</h4>
+                                                    <div class="sale-card__info-description">
+                                                        <p>Получите комплексную медицинскую помощь и поддержку на протяжении всего периода беременности</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="sale-card__info-btns">
+                                                    <li class="sale-card__info-btns-item">
+                                                        <button class="sale-card__info-btn button button--secondary">Записаться</button>
+                                                    </li>
+                                                    <li class="sale-card__info-btns-item">
+                                                        <a href="sale-detail.html" class="sale-card__info-link button button--outline">Подробнее</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="sale-section__list-item">
+                                    <article class="sale-section__card sale-card sale-card--current">
+                                        <div class="sale-card__body">
+                                            <div class="sale-card__preview">
+                                                <img loading="lazy" src="./assets/img/blog/img.png" alt="Изображение акции" class="sale-card__preview-img">
+                                            </div>
+                                            <div class="sale-card__info">
+                                                <div class="sale-card__info-top">
+                                                    <h3 class="sale-card__info-title text-md">Программы ведения беременности</h3>
+                                                    <h4 class="sale-card__info-percent">10% скидка на все услуги центра</h4>
+                                                    <div class="sale-card__info-description">
+                                                        <p>Получите комплексную медицинскую помощь и поддержку на протяжении всего периода беременности</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="sale-card__info-btns">
+                                                    <li class="sale-card__info-btns-item">
+                                                        <button class="sale-card__info-btn button button--secondary">Записаться</button>
+                                                    </li>
+                                                    <li class="sale-card__info-btns-item">
+                                                        <a href="sale-detail.html" class="sale-card__info-link button button--outline">Подробнее</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="sale-section__list-item">
+                                    <article class="sale-section__card sale-card sale-card--current">
+                                        <div class="sale-card__body">
+                                            <div class="sale-card__preview">
+                                                <img loading="lazy" src="./assets/img/blog/img.png" alt="Изображение акции" class="sale-card__preview-img">
+                                            </div>
+                                            <div class="sale-card__info">
+                                                <div class="sale-card__info-top">
+                                                    <h3 class="sale-card__info-title text-md">Программы ведения беременности</h3>
+                                                    <h4 class="sale-card__info-percent">10% скидка на все услуги центра</h4>
+                                                    <div class="sale-card__info-description">
+                                                        <p>Получите комплексную медицинскую помощь и поддержку на протяжении всего периода беременности</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="sale-card__info-btns">
+                                                    <li class="sale-card__info-btns-item">
+                                                        <button class="sale-card__info-btn button button--secondary">Записаться</button>
+                                                    </li>
+                                                    <li class="sale-card__info-btns-item">
+                                                        <a href="sale-detail.html" class="sale-card__info-link button button--outline">Подробнее</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <!-- js-библиотеки -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/javascript/vendor/fslightbox.js"></script>
+    <!-- main js -->
+    <script type="module" src="./assets/javascript/app.js"></script>
+</body>
+</html>
