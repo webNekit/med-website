@@ -52,3 +52,25 @@
 .sale-card:is(.sale-card--current) .sale-card__info-btns {
     margin-block-start: auto;
 }
+
+.sale-card:is(.sale-card--current) .sale-card__info-btns {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.sale-card:is(.sale-card--current) .sale-card__info-btn,
+.sale-card:is(.sale-card--current) .sale-card__info-link {
+    --width: 210px;
+    width: var(--width);
+    min-width: 155px;
+    max-width: var(--width);
+    text-align: center;
+    padding-block: 17px;
+}
+
+.sale-card:is(.sale-card--current) .sale-card__info-time {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+}
