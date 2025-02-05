@@ -1,0 +1,37 @@
+/* Акции */
+.detail-section:is(.detail-section--sale) {
+    padding-block-start: 40px;
+    padding-block-end: 60px;
+    display: grid;
+    row-gap: 40px;
+}
+
+.detail-section:is(.detail-section--sale) .detail-section__container--small {
+    max-width: calc(1088px + (var(--container-offset) * 2));
+    width: 100%;
+}
+
+.detail-section:is(.detail-section--sale) .detail-section__intro-text {
+    display: grid;
+    row-gap: 20px;
+}
+.detail-section:is(.detail-section--sale) .detail-section__intro-text p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.detail-section:is(.detail-section--sale) .detail-section__content {
+    display: grid;
+    row-gap: 20px;
+}
+.detail-section:is(.detail-section--sale) .detail-section__content:not(:last-child) {
+    margin-block-end: 40px;
+}
+.detail-section:is(.detail-section--sale) .detail-section__content-text {
+    font-size: 18px;
+    line-height: 28px;
+    display: grid;
+    row-gap: 20px;
+}
+/* Врачи */
+/* Вакансии */
